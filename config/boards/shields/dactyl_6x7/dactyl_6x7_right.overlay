@@ -1,7 +1,7 @@
 #include "dactyl_6x7.dtsi"
 
 &default_transform { // The matrix transform for this board is 6 columns over because the left half is 7 columns wide according to the matrix.
-    col-offset = <7>;
+    col-offset = <9>; // было 6, потом 7
 };
 
 &kscan0 {
