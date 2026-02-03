@@ -8,7 +8,7 @@
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
-        columns = <14>; //удвоенное число электрических колонок 7*2
+        columns = <16>; //удвоенное число электрических ? колонок 7*2
         rows = <6>; //единичное число электрических рядов
 // | MX1  | MX2  | MX3  | MX4  | MX5  | MX6  |                 | MX7  | MX8  | MX9  | MX10 | MX11 | MX12 |
 // | MX13 | MX14 | MX15 | MX16 | MX17 | MX18 |                 | MX19 | MX20 | MX21 | MX22 | MX23 | MX24 |
@@ -35,13 +35,13 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6)                         
         label = "KSCAN";
 
         diode-direction = "col2row";
-        row-gpios
-            = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        row-gpios	// должны быть горизонтальные ряды, row, их 6
+            = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 	//19
+            , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>	//18
+            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>	//15
+            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>	//14
+            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>	//16
+            , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>	//10
             ;
 
     };
