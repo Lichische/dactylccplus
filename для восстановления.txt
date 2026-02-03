@@ -1,0 +1,61 @@
+kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
+
+        diode-direction = "row2col";//было col2row
+        row-gpios
+            = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* row 1 */
+            /*, <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> row 2 */
+            /*, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> row 3 */
+            /*, <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> row 4 */
+            /*, <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> row 5 */
+            /* <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> row 6 */
+            ;
+
+    };
+};
+
+
+
+
+
+
+
+
+
+
+
+#include "dactylccplus_6x7.dtsi" // Notice that the main dtsi files are included in the overlay.
+
+&kscan0 {
+    col-gpios
+        = <&pro_micro 20 GPIO_ACTIVE_HIGH>/* col 1 */
+        , <&pro_micro 19 GPIO_ACTIVE_HIGH>/* col 2 */
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH>/* col 3 */
+        , <&pro_micro 15 GPIO_ACTIVE_HIGH>/* col 4 */
+        , <&pro_micro 14 GPIO_ACTIVE_HIGH>/* col 5 */
+        , <&pro_micro 16 GPIO_ACTIVE_HIGH>/* col 6 */
+        , <&pro_micro 10 GPIO_ACTIVE_HIGH>/* col 7 */
+        ;
+};
+
+
+
+
+
+
+keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp A   &kp B   &kp C   &kp D   &kp E   &kp F   &kp G             /* &kp N6 &kp N7 &kp N8    &kp N9  &kp N0   &kp BSPC*/
+                &kp H   &kp I   &kp J   &kp K   &kp L   &kp M   &kp N             /*  &kp Y  &kp U  &kp I     &kp O   &kp P    &kp MINUS*/
+                 &kp O   &kp P   &kp Q   &kp R   &kp S   &kp T   &kp U            /*   &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp SQT*/
+                 &kp V   &kp W   &kp X   &kp Y   &kp Z   &kp N1  &kp N2           /*    &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH*/
+                  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9          /*       &kp PLUS &kp EQUAL*/
+                   &kp SPACE &kp ENTER &kp BSPC &kp TAB                           /*  &kp RET  &kp RSE*/
+                                                                                  /*&kp END  &kp DEL*/
+                                                                                  /*&kp LGUI &kp LALT*/
+            >;
+        };
