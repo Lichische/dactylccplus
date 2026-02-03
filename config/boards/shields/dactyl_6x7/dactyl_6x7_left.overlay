@@ -1,4 +1,5 @@
 #include "dactyl_6x7.dtsi" // Notice that the main dtsi files are included in the overlay.
+//тут указывается число вертикальных рядов, их 7
 
 &kscan0 {
     col-gpios
@@ -8,5 +9,6 @@
         , <&pro_micro 7 GPIO_ACTIVE_HIGH>
         , <&pro_micro 8 GPIO_ACTIVE_HIGH>
         , <&pro_micro 9 GPIO_ACTIVE_HIGH>
+	, <&pro_micro 10 GPIO_ACTIVE_HIGH>
         ;
 };
