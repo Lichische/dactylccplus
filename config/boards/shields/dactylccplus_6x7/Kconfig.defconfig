@@ -1,7 +1,7 @@
 if SHIELD_DACTYLCCPLUS_6x7_LEFT
 
     config ZMK_KEYBOARD_NAME
-        default "LICHISCHE-DACTYL-L"
+        default "DACTYL-L"
 
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
         default y
@@ -11,7 +11,7 @@ endif
 if SHIELD_DACTYLCCPLUS_6x7_RIGHT
 
     config ZMK_KEYBOARD_NAME
-        default "LICHISCHE-DACTYL-R"
+        default "DACTYL-R"
 
 endif
 
