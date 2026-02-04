@@ -2,12 +2,5 @@
 
 &kscan0 {
     col-gpios
-        = <&pro_micro 20 GPIO_ACTIVE_HIGH>// col 0 жирный коричневый
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH>// col 1 жирный черный
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>// col 2 жирный красный
-        , <&pro_micro 15 GPIO_ACTIVE_HIGH>// col 3 жирный белый
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH>// col 4 жирный оранжевый
-        , <&pro_micro 16 GPIO_ACTIVE_HIGH>// col 5 жирный желтый
-        , <&pro_micro 10 GPIO_ACTIVE_HIGH>// col 6 жирный белый
-        ;
+        = <&pro_micro 20 GPIO_ACTIVE_HIGH>;
 };
