@@ -1,17 +1,26 @@
-#include "dactylccplus_6x7.dtsi"
-
-&default_transform { // The matrix transform for this board is 7 columns over because the left half is 7 columns wide according to the matrix.
-    col-offset = <7>;
-};
+#include "dactylccplus_6x7.dtsi" // Notice that the main dtsi files are included in the overlay.
+//&default_transform { // The matrix transform for this board is 7 columns over because the left half is 7 columns wide according to the matrix.
+//    col-offset = <7>;
 
 &kscan0 {
-    col-gpios
-        = <&pro_micro 20 GPIO_ACTIVE_HIGH>//9
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH>//8
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>//7
-        , <&pro_micro 15 GPIO_ACTIVE_HIGH>//6
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH>//5
-        , <&pro_micro 16 GPIO_ACTIVE_HIGH>//4
-        , <&pro_micro 10 GPIO_ACTIVE_HIGH>//добавлена
-        ;
+	compatible = "zmk,kscan-gpio-matrix";
+	
+	col-gpios
+		= <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		//, <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		//, <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		//, <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		//, <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		//, <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		//, <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		;
+
+	row-gpios
+		= <&pro_micro 9 GPIO_ACTIVE_HIGH>
+		//, <&pro_micro 8  GPIO_ACTIVE_HIGH>
+		//, <&pro_micro 7  GPIO_ACTIVE_HIGH>
+		//, <&pro_micro 6  GPIO_ACTIVE_HIGH>
+		//, <&pro_micro 5 GPIO_ACTIVE_HIGH>
+		//, <&pro_micro 4 GPIO_ACTIVE_HIGH>
+		;
 };
