@@ -9,7 +9,7 @@
 		, <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>//col_2 115 18 жирный красный
 		, <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>//col_3 113 15 жирный белый
 		, <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>//col_4 111 16 жирный оранжевый
-		, <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>//col_5 010 16 жирный белый
+		, <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>//col_5 010 16 жирный жёлтый
 		, <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>//col_6 009 10 жирный белый
 		;
 

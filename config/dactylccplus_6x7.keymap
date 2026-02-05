@@ -10,7 +10,17 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = < &kp B >;
+            bindings = <
+			&kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp F1/*row_0*/
+			&kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T &kp F2/*row_1*/
+			&kp LSHFT &kp A  &kp S  &kp D  &kp F  &kp G &kp F3/*row_2*/
+			&kp LCTRL &kp Z  &kp X  &kp C  &kp V  &kp B &kp F4/*row_3*/
+			&kp LCTRL &kp Z  &kp X  &kp C  &kp V  &kp B &kp F4/*row_4*/
+                                 &kp LBKT &kp RBKT
+                                            &mo LWR  &kp SPACE
+                                            &kp N1   &kp HOME
+                                            &kp BSPC &kp GRAVE
+			>;//конец bindings
         };
 
 
