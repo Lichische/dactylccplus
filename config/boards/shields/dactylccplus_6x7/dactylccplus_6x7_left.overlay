@@ -1,24 +1,24 @@
 #include "dactylccplus_6x7.dtsi" // Notice that the main dtsi files are included in the overlay.
 
 &kscan0 {
-	compatible = "zmk,kscan-gpio-matrix";
-	
-	col-gpios
-		= <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_0 029 20 жирный коричневый
-		, <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_1 002 19 жирный чёрный
-		, <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_2 115 18 жирный красный
-		, <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_3 113 15 жирный белый
-		, <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_4 111 16 жирный оранжевый
-		, <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_5 010 16 жирный жёлтый
-		, <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_6 009 10 жирный белый
-		;
+    compatible = "zmk,kscan-gpio-matrix";
 
-	row-gpios
-		= <&pro_micro 9 GPIO_ACTIVE_HIGH> // row_0 106 9 зеленая
-		, <&pro_micro 8 GPIO_ACTIVE_HIGH> // row_1 104 8 белозеленая
-		, <&pro_micro 7 GPIO_ACTIVE_HIGH> // row_2 011 7 оранжевая
-		, <&pro_micro 6 GPIO_ACTIVE_HIGH> // row_3 100 6 белооранжевая
-		, <&pro_micro 5 GPIO_ACTIVE_HIGH> // row_4 024 5 коричневая
-		, <&pro_micro 4 GPIO_ACTIVE_HIGH> // row_5 022 4 синяя
-		;
+    col-gpios
+        = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_0 029 20 жирный коричневый
+        , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_1 002 19 жирный чёрный
+        , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_2 115 18 жирный красный
+        , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_3 113 15 жирный белый
+        , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_4 111 16 жирный оранжевый
+        , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_5 010 16 жирный жёлтый
+        , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col_6 009 10 жирный белый
+        ;
+
+    row-gpios
+        = <&pro_micro 9 GPIO_ACTIVE_HIGH> // row_0 106 9 зеленая
+        , <&pro_micro 8 GPIO_ACTIVE_HIGH> // row_1 104 8 белозеленая
+        , <&pro_micro 7 GPIO_ACTIVE_HIGH> // row_2 011 7 оранжевая
+        , <&pro_micro 6 GPIO_ACTIVE_HIGH> // row_3 100 6 белооранжевая
+        , <&pro_micro 5 GPIO_ACTIVE_HIGH> // row_4 024 5 коричневая
+        , <&pro_micro 4 GPIO_ACTIVE_HIGH> // row_5 022 4 синяя
+        ;
 };
