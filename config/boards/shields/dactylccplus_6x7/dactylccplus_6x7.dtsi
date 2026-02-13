@@ -23,5 +23,8 @@ RC(5,0) RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)										 RC(3,12) RC(3,
         >;//конец map
     };
 
-   
+kscan0: kscan {
+        diode-direction = "row2col";
+    };
+
 };
