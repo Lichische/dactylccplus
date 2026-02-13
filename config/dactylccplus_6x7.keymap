@@ -19,5 +19,18 @@
                                                             &kp BSPC   &kp DEL    &kp END                 &kp PG_DN      &kp RET    &kp SPACE
             >;
         };
+
+        layer_1 {
+            bindings = <
+        &trans  &kp B   &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans
+                                                &trans  &trans            &trans  &trans
+                                                        &trans            &trans
+                                        &trans  &trans  &trans            &trans  &trans  &trans
+            >;
+        };
     };
 };
