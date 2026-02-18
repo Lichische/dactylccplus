@@ -1,16 +1,8 @@
-# TaikoHub Dactyl Manuform Keyboard ZMK Configuration
+# Dactyl CC plus (6x7 with RUS/LAT buttons) Keyboard ZMK Configuration
 
 ## Introduction
 
-This repository contains the ZMK configuration for the [TaikoHub Dactyl Manuform](https://taikohub.com), a Bluetooth-enabled split ergonomic keyboard. Customize your keyboard's layout and functionality with these files.
-
-
-Compatible with nice!nano v2, SuperMini nRF52840, and Pro Micro nRF52840 controllers (not compatible with BlueMicro).
-
-
-For complete setup instructions and documentation, visit the [official TaikoHub Dactyl Manuform documentation](https://docs.taikohub.com).
-
-
+Based on [TaikoHub Dactyl Manuform](https://taikohub.com), but 6x7.
 
 ## Instructions
 
