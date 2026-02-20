@@ -18,3 +18,6 @@ include:
     shield: dactylccplus_6x7_right
   - board: nice_nano
     shield: settings_reset
+
+studio-rpc-usb-uart
+CONFIG_ZMK_STUDIO=y
