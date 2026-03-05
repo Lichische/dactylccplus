@@ -14,6 +14,21 @@
             bindings = <&email_macro>;
             key-positions = <54 68 2>;
         };
+
+        pwd_combo {
+            bindings = <&pwd_macro>;
+            key-positions = <68 58>;
+        };
+
+        ctr_del_combo {
+            bindings = <&ctrl_del_macro>;
+            key-positions = <68 73>;
+        };
+
+        shift_del_combo {
+            bindings = <&shift_del_macro>;
+            key-positions = <54 73>;
+        };
     };
 
     macros {
@@ -22,6 +37,27 @@
             #binding-cells = <0>;
             bindings = <&kp L &kp I &kp C &kp H &kp I &kp S &kp C &kp H &kp E &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "EMAIL_MACRO";
+        };
+
+        pwd_macro: pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp A &kp G &kp O &kp R &kp R &kp A &kp T &kp I &kp S &kp T &kp O &kp L &kp K &kp I &kp E &kp N &kp W &kp A &kp R>;
+            label = "PWD";
+        };
+
+        ctrl_del_macro: ctrl_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(RC(LA(RIGHT_ARROW))) &kp DEL>;
+            label = "CTRL_DEL";
+        };
+
+        shift_del_macro: shift_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(END) &kp DEL>;
+            label = "SHIFT_DEL";
         };
     };
 
